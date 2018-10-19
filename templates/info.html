@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information</title>
+    <H1>The Contacts added in the database</H1>
+</head>
+<body>
+    <table border="1" width="50%">
+    	{% for d in contact %}
+		<tr>
+			<td>{{d}}</td>
+		</tr>
+        {% endfor %}
+    </table>
+</body>
+</html >

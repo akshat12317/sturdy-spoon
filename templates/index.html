@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<h1>Akshat Sinha</h1>
+	<h2>Dayanand Sagar college of engineering</h2>
+	<ul>
+		<li><a href="x">Click</a></li>
+		<li><a href="x">click</a></li>
+		<li><a href="google.co.in">Click</a></li>	
+	</ul>
+</head>
+<body>
+	<h3>How to take input from user</h3>
+	<form method="POST">
+		<input type="text" name="Input1" placeholder="Enter a value">
+		<button>Send</button>
+	</form>
+	{% if data %}
+	<table border="1" width="50%">
+		<tr><td>vowels</td><td>counted</td></tr>
+		{% for key,value in data.items() %}<!-- using a for loop in html for flask-->
+		<tr>
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+		</tr>
+		{% endfor %}<!-- ending the loop -->
+	</table>
+	{% endif %}
+	<br>
+	<a href="/contact">Contact Us</a>
+
+</body>
+</html>
